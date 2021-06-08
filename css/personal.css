@@ -1,0 +1,15 @@
+.personal {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.personal p:nth-child(1) {
+  font: 24px/38px var(--fontBase);
+}
+
+.personal p:nth-child(2) {
+  font: 700 24px/38px var(--fontBase);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}

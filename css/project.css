@@ -1,0 +1,43 @@
+.project {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.project-image img {
+  max-inline-size: 100%;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.project-description p {
+  font: var(--body1);
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .project-description {
+    flex: 1;
+  }
+
+  .project-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  .project:nth-child(2n) > .project-image {
+    order: 2;
+  }
+}

@@ -1,0 +1,44 @@
+.footer {
+  text-align: center;
+  font: var(--body1);
+  color: var(--white);
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  display: none;
+}
+
+.footer .social {
+  justify-content: center;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    display: block;
+  }
+
+  .footer .social {
+    order: 3;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-copy {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
